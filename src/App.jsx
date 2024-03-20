@@ -26,7 +26,7 @@ function App() {
         )}
 
         <button
-          className="bg-slate-600 p-2 rounded-md"
+          className="bg-slate-500 p-2 rounded-md text-white"
           onClick={() => toogleLight()}
         >
           Prender Foco
