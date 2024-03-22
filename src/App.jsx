@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./App.css";
+import { FaRegLightbulb } from "react-icons/fa";
+import { FaLightbulb } from "react-icons/fa";
 
 function App() {
   const [light, setLight] = useState(false);
@@ -8,21 +10,11 @@ function App() {
   };
   return (
     <>
-      <div className="flex flex-col items-center justify-center h-screen">
+      <div className="flex flex-col items-center justify-center h-screen gap-10">
         {light ? (
-          <img
-            src="https://images.emojiterra.com/openmoji/v13.1/512px/1f4a1.png"
-            alt="foco"
-            width={900}
-            height={900}
-          ></img>
+          <FaRegLightbulb className="text-9xl "></FaRegLightbulb>
         ) : (
-          <img
-            src="https://images.emojiterra.com/google/noto-emoji/unicode-15/bw/1024px/1f4a1.png"
-            alt="foco"
-            width={900}
-            height={900}
-          ></img>
+          <FaLightbulb className="text-9xl text-yellow-500"></FaLightbulb>
         )}
 
         <button
